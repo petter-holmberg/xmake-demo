@@ -1,0 +1,16 @@
+export module greetings;
+
+import <iostream>;
+
+export bool hello(bool in_test);
+
+bool hello(bool in_test)
+{
+    if (in_test) {
+        std::cout << "Hello, module, from unit test!\n";
+    } else {
+        std::cout << "Hello, module!\n";
+    }
+
+    return in_test;
+}
